@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impacta | Calculadora IMC</title>
+    <link href="./source/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <form action="/calcular-imc" method="post">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required><br><br>
+    
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" required><br><br>
+    
+            <input type="button" id="btnCalculo" value="Calcular IMC" onclick="calcularIMC()">
+        </form>
+    
+        <p id="containerResultado">Seu IMC é: <span id="resultado"></span></p>
+    </main>
+
+    <script src="./source/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
